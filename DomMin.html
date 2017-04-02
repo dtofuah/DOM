@@ -2,15 +2,16 @@
 <html>
   <head>
     <title>Event Handling</title>
+    <link rel="stylesheet" href ="style.css" type="text/css">
   </head>
   <body>
          <!-- click button to say "I'm right" -->
       <div class="buttons">
         <h2>Event Handling in Action</h2>
-        <button id="first_button" onclick="button1('I'm right')">Click me</button>
-        <button id="second_button" onclick="button2('No, I'm right')">No, click me!</button>
-        <div id="print_text">
-        </div>
+        <button id="first_button" onclick="button1('I\'m right')">Click me</button>
+        <button id="second_button" onclick="button2('No, I\'m right')">No, click me!</button>
+
+
       </div>
 
 
@@ -19,22 +20,23 @@
 
 
 
-
-      <h1 id = "header"></h1>
-      <input type= "text" onkeypress="myFunction()">
-
-
+         <!-- text appear on screen -->
+         <div>
+      <h1 id = "header" onkeypress="myFunction()"></h1>
+    </div>
 
 
        <!-- form -->
-      <form id= form>
-        <lable>Username <input type= "txet"></lable></br>
-        <lable>Email <input type= "txet"></lable></br>
-        <lable>Password<input type= "password" id ="password"></lable></br>
-        <button>Submit</button>
+       <div class = "div_button">
+      <form id= "form">
+        <lable id = "user1">Username <input type= "txet" id= "user"></lable><br>
+        <lable id = "email1">Email<input type= "txet" id = "email"></lable><br>
+        <lable id = "password1">Password<input type= "password" id ="pass"></lable>
+
+        <button id= "but">Submit</button>
       </form>
-
-
+         <h1>Fill in your information</h1>
+      </div>
 
 
   <script src="main2.js"></script>
